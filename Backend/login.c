@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-__declspec(dllexport) void login_hash(char* user_name, char* user_masterkey){
+__attribute__((visibility("default"))) void login_hash(char* user_name, char* user_masterkey){
 	unsigned char digest[SHA256_DIGEST_LENGTH];
 	SHA256((const unsigned char* )user_masterkey, strlen(user_masterkey), digest);
 

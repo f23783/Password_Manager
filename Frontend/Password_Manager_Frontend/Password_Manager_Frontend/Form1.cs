@@ -44,7 +44,7 @@ namespace Password_Manager_Frontend
 
             if (name == username && masterkey == password)
             {
-                Form2 mainForm = new Form2();
+                MainForm mainForm = new MainForm();
                 mainForm.Show();
                 this.Hide();
             }
